@@ -1,0 +1,9 @@
+{
+  "taxi_id": "TX001",
+  "timestamp": "2026-09-07T10:00:01.000Z",
+  "latitude_deg": 48.8566,
+  "longitude_deg": 2.3522,
+  "altitude_m": 35.2,
+  "speed_mps": 12.5,
+  "heading_deg": 180.0
+}

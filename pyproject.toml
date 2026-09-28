@@ -1,0 +1,42 @@
+[project]
+name = "monitoring-taxi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Leon OKOMBE", email = "okombeleonrobland@gmail.com" }
+]
+requires-python = ">=3.11.8"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "pillow>=12.3.0",
+    "scipy>=1.17.1",
+    "torchreid>=0.2.5",
+    "ultralytics>=8.4.143",
+]
+
+[project.scripts]
+monitoring-taxi = "monitoring_taxi:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# 2. Indiquer à Hatchling où chercher votre package (le dossier src)
+[tool.hatch.build.targets.wheel]
+packages = ["src/monitoring_taxi"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.6",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

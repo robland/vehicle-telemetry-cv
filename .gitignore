@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+cmake-build-debug/
+*.egg-info
+
+# Virtual environments
+.venv
+data/analysis/*.*
+data/tracking/*.*
+data/videos/*.*
+
+deep-person-reid/
+*/yolo11n.pt
